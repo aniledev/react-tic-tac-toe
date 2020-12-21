@@ -3,15 +3,23 @@ import ReactDOM from "react-dom";
 import "./index.css";
 
 class Square extends React.Component {
+  // React components can have state by setting this.state in their constructors
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: null,
+    };
+  }
+
   render() {
     return (
       <button
         className="square"
-        onClick={function () {
-          alert("click");
-        }}
+        // adding an onClick callback to the square to make sure they are interactive
+        // when calling setState, React automaticaly updates the child components inside of it too
+        onClick={() => this.setState({ value: "X" })}
       >
-        {this.props.value}
+        {this.state.value}
       </button>
     );
   }
