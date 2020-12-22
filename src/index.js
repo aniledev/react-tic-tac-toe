@@ -33,6 +33,10 @@ class Board extends React.Component {
   // this changes the squares array the state of each square is being kept
   handleClick(i) {
     const squares = this.state.squares.slice();
+    // this allows the click to be ignored if a winner is declared or if a square is already filled
+    if (calculateWinner(squares) || squares[i]) {
+      return;
+    }
     //this allows X and O to take turns when a square is clicked on
     squares[i] = this.state.xIsNext ? "X" : "O";
     this.setState({
