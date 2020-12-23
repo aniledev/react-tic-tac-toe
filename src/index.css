@@ -39,8 +39,10 @@ ul {
   width: 110px;
 }
 
-.square:focus {
+.square:focus,
+.square:hover {
   outline: none;
+  background-color: #e4e0dd;
 }
 
 .kbd-navigation .square:focus {
