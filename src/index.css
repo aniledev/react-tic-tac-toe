@@ -39,14 +39,8 @@ ul {
   width: 110px;
 }
 
-.square:focus,
-.square:hover {
-  outline: none;
-  background-color: #e4e0dd;
-}
-
-.kbd-navigation .square:focus {
-  background: #ddd;
+.square:focus {
+  background-color: #184477;
 }
 
 .game {
