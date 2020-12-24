@@ -39,8 +39,10 @@ ul {
   width: 110px;
 }
 
-.square:focus {
+.square:focus,
+.square:hover {
   background-color: #184477;
+  outline: none;
 }
 
 .game {
