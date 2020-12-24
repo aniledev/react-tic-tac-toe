@@ -68,4 +68,5 @@ ul {
 .flex {
   flex: 1;
   justify-content: space-between;
+  margin-left: 35px;
 }
