@@ -51,7 +51,6 @@ ul {
   margin: auto;
   width: 60%;
   margin-top: 100px;
-  margin-right: 35px;
 }
 
 .game-info.flex {
@@ -62,7 +61,7 @@ ul {
   margin-top: 20px;
   width: 30%;
   color: #f6f4f3;
-  font-size: 23px;
+  font-size: 22px;
   font-weight: bold;
 }
 
